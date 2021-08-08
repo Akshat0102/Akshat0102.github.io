@@ -17,6 +17,7 @@ body {
   font-size: 20px;
   color: black;
   font-family: Okra, Helvetica, sans-serif;
+  font-style: italic;
   float: left;
   height: 40px;
   margin-left: 80px;
@@ -180,7 +181,7 @@ footer .content .right input[type="submit"] {
   width: 100%;
   font-size: 18px;
   color: #d9d9d9;
-  background: #adb5bd;
+  background :#f44336;
   outline: none;
   border-radius: 5px;
   letter-spacing: 1px;
@@ -215,7 +216,7 @@ footer .bottom {
   padding: 0 40px 5px 0;
 }
 footer .bottom a {
-  color: #adb5bd;
+  color: brown;
 }
 footer a {
   transition: all 0.3s ease;
@@ -361,8 +362,9 @@ hr {
 }
 
 img.avatar {
-  width: 40%;
-  border-radius: 5%;
+  width: 20%;
+  height: 35%;
+  border-radius: 95%;
 }
 
 .container {
