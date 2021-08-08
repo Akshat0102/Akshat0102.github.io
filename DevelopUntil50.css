@@ -40,9 +40,8 @@ body {
 .accountlink button {
   background-color: #2ede98;
   color: white;
-  margin-right: 10px;
-  width: 100px;
-  border-radius: 7px;
+  margin-right: 20px;
+  width: 440px;
 }
 
 .accountlink button:hover {
@@ -67,25 +66,26 @@ body {
   margin-top: 25px;
 }
 
-.cafe-section {
+.cafe-section1 {
   height: 20%;
 }
 
-#cafe-tag {
+.cafe-row1 {
+  height: 50%;
+  margin-bottom: 8px;
+}
+
+#cafe-tag1 {
   font-size: 30px;
   float: left;
   color: #222222;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.cafe-row {
-  height: 20%;
-}
-
 .column img {
   float: left;
   width: 20%;
-  height: 230%;
+  height: 80%;
   margin-left: 30px;
   margin-right: 30px;
   border: none;
@@ -93,123 +93,26 @@ body {
   align-items: center;
 }
 
-.secondbox {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+.cafe-section2 {
+  height: 20%;
 }
-.features {
-  padding: 10px;
-  height: 300px;
-  width: 33%;
-  color: black;
-  margin-left: 2%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.cafe-row2 {
+  height: 50%;
+  margin-bottom: 50px;
 }
-.second-1 {
-  margin-left: 0;
-}
-.thirdbox {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.popular {
-  padding: 5px;
-  height: 250px;
-  width: 50%;
-  color: white;
-  margin-left: 2%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.link {
-  width: 10%;
-}
-.wrapper {
-  color: black;
-  height: 300px;
-  width: 320px;
-  position: relative;
-  transform-style: preserve-3d;
-  perspective: 1000px;
-}
-.wrapper .card {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  padding: 5px;
-  background: #fff;
-  border-radius: 10px;
-  transform: translateY(0deg);
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-}
-.wrapper:hover > .front-face {
-  transform: rotateY(-180deg);
-}
-.wrapper .card img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-}
-.wrapper .back-face {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
-  transform: rotateY(180deg);
-}
-.wrapper:hover > .back-face {
-  transform: rotateY(0deg);
-}
-.wrapper .back-face img {
-  height: 100px;
-  width: 100px;
-  padding: 5px;
-  border-radius: 50%;
-  background: linear-gradient(375deg, #1cc7d0, #2ede98);
-}
-.wrapper .back-face .info {
-  text-align: center;
-}
-.back-face .info .title {
+
+#cafe-tag2 {
   font-size: 30px;
-  font-weight: 500;
+  float: left;
+  color: #222222;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.back-face ul {
-  display: flex;
+
+.lastbox {
+  height: 80px;
 }
-.back-face ul a {
-  display: block;
-  height: 40px;
-  width: 40px;
-  color: #fff;
-  text-align: center;
-  margin: 0 5px;
-  line-height: 38px;
-  border: 2px solid transparent;
-  border-radius: 50%;
-  background: linear-gradient(375deg, #1cc7d0, #2ede98);
-  transition: all 0.5s ease;
-}
-.back-face ul a:hover {
-  color: #1cc7d0;
-  border-color: #1cc7d0;
-  background: linear-gradient(375deg, transparent, transparent);
-}
+
 footer {
   width: 100%;
   position: relative;
@@ -307,7 +210,7 @@ footer .content .media-icons a {
 }
 footer .bottom {
   width: 100%;
-  text-align: right;
+  text-align: center;
   color: #d9d9d9;
   padding: 0 40px 5px 0;
 }
@@ -319,4 +222,225 @@ footer a {
 }
 footer a:hover {
   color: #eb2f06;
+}
+
+.container input[type="text"],
+.container input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.container input[type="text"]:focus,
+.container input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.clearfix button {
+  background-color: #04aa6d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.clearfix button:hover {
+  opacity: 1;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.clearfix .cancelbtn,
+.clearfix .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
+}
+
+.container1 input[type="text"],
+.container1 input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.container1 button {
+  background-color: #04aa6d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.container1 button:hover {
+  opacity: 0.8;
+}
+
+.container1 .cancelbtn {
+  margin-left: 25px;
+  width: 600px;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+  margin-right: 25px;
+  color: black;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.imgcontainer .close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.imgcontainer .close:hover,
+.imgcontainer .close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
 }
