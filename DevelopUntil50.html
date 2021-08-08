@@ -1,197 +1,198 @@
 <Html>
 
-  <Head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="DevelopUntil50.css">
-    <title>Foodies</title>
-  </Head>
-  
-  <Body>
-    <!first level for backgroung image and signing up and searching>
-      <div class="firstbox">
-        <div class="accountlink">
-          <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Log In</button>
-          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
-        </div>
-  
-  
-        <div id="id01" class="modal">
-          <span onclick="document.getElementById('id01').style.display='none'" class="close"
-            title="Close Modal">&times;</span>
-          <form class="modal-content" action="/action_page.php">
-            <div class="container">
-              <h1>Sign Up</h1>
-              <p>Please fill in this form to create an account.</p>
-              <hr>
-              <label for="email"><b>Email</b></label>
-              <input type="text" placeholder="Enter Email" name="email" required>
-  
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required>
-  
-              <label for="psw-repeat"><b>Repeat Password</b></label>
-              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-  
-              <label>
-                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-              </label>
-  
-              <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-  
-              <div class="clearfix">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                  class="cancelbtn">Cancel</button>
-                <button type="submit" class="signupbtn">Sign Up</button>
-              </div>
-            </div>
-          </form>
-        </div>
-  
-  
-        <div id="id02" class="modal">
-  
-          <form class="modal-content animate" action="/action_page.php" method="post">
-            <div class="imgcontainer">
-              <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                title="Close Modal">&times;</span>
-              <img
-                src="https://images.unsplash.com/photo-1580998510397-f5643998fc69?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c21pbGluZyUyMGZhY2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
-                alt="Avatar" class="avatar">
-            </div>
-  
-            <div class="container1">
-              <label for="uname"><b>Username</b></label>
-              <input type="text" placeholder="Enter Username" name="uname" required>
-  
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required>
-  
-              <button type="submit">Login</button>
-              <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-              </label>
-            </div>
-  
-            <div class="container1" style="background-color:#f1f1f1">
+<Head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="DevelopUntil50.css">
+  <title>Foodies</title>
+</Head>
+
+<Body>
+  <!first level for backgroung image and signing up and searching>
+    <div class="firstbox">
+      <div class="accountlink">
+        <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Log In</button>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+      </div>
+
+
+      <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+          title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+          <div class="container">
+            <h1>Sign Up</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+            <label>
+              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+
+            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+            <div class="clearfix">
               <button type="button" onclick="document.getElementById('id01').style.display='none'"
                 class="cancelbtn">Cancel</button>
-              <span class="psw">Forgot <a href="#">password?</a></span>
+              <button type="submit" class="signupbtn">Sign Up</button>
             </div>
-          </form>
-        </div>
-  
-  
-        <div class="head">
-          <h1>Foodies</h1>
-        </div>
-        <div class="search-bar">
-          <form action="post">
-            <input type="text" placeholder="Search for restaurants, cuisine or dish....">
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
-  
-  
-      <div class="cafe-section1">
-  
-        <p id="cafe-tag1">Best restaurants near you</p>
-  
+
+
+      <div id="id02" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+              title="Close Modal">&times;</span>
+            <img
+              src="https://images.unsplash.com/photo-1580998510397-f5643998fc69?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c21pbGluZyUyMGZhY2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+              alt="Avatar" class="avatar">
+          </div>
+
+          <div class="container1">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+
+          <div class="container1" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+              class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
       </div>
-  
-      <div class="cafe-row1">
-        <div class="column">
-          <img
-            src="https://images.unsplash.com/photo-1615719413546-198b25453f85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=676&q=80"
-            alt="Dominos">
-        </div>
-        <div class="column">
-          <img
-            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=902&q=80"
-            alt="Burger King">
-        </div>
-        <div class="column">
-          <img
-            src="https://images.unsplash.com/photo-1585032226651-759b368d7246?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=897&q=80"
-            alt="China Town">
-        </div>
-        <div class="column">
-          <img
-            src="https://images.unsplash.com/photo-1625944525803-d510d5a4a262?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=756&q=80"
-            alt="Friends Point">
-        </div>
+
+
+      <div class="head">
+        <h1>Foodies</h1>
       </div>
-  
-  
-  
-      <div class="cafe-section2">
-  
-        <p id="cafe-tag2">Your favourite foods</p>
-  
+      <div class="search-bar">
+        <form action="post">
+          <input type="text" placeholder="Search for restaurants, cuisine or dish....">
+        </form>
       </div>
-  
-      <div class="cafe-row2">
-        <div class="column">
-          <img
-            src="https://images.unsplash.com/photo-1615719413546-198b25453f85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=676&q=80"
-            alt="Dominos">
-        </div>
-        <div class="column">
-          <img
-            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=902&q=80"
-            alt="Burger King">
-        </div>
-        <div class="column">
-          <img
-            src="https://images.unsplash.com/photo-1585032226651-759b368d7246?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=897&q=80"
-            alt="China Town">
-        </div>
-        <div class="column">
-          <img
-            src="https://images.unsplash.com/photo-1625944525803-d510d5a4a262?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=756&q=80"
-            alt="Friends Point">
-        </div>
+    </div>
+
+
+    <div class="cafe-section1">
+
+      <p id="cafe-tag1">Best restaurants near you</p>
+
+    </div>
+
+    <div class="cafe-row1">
+      <div class="column">
+        <img
+          src="https://images.unsplash.com/photo-1615719413546-198b25453f85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=676&q=80"
+          alt="Dominos">
       </div>
-            <div class="lastbox">
-              <footer>
-                <div class="content">
-                  <div class="left box">
-                    <div class="upper">
-                      <div class="topic">About us</div>
-                      <p>Foodies provides assistance in delivering food at best discounts.</p>
-                    </div>
-                    <div class="lower">
-                      <div class="topic">Contact us</div>
-                      <div class="phone">
-                        <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
-                      </div>
-                      <div class="email">
-                        <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="middle box">
-                    <div class="topic">Our Services</div>
-                    <div><a href="#">Fast Delivery</a></div>
-                    <div><a href="#">Enriching Food</a></div>
-                    <div><a href="#">Covid-19 Protocols</a></div>
-                    <div><a href="#">Premium Membership</a></div>
-                    <div><a href="#">Dedicated Crew </a></div>
-                  </div>
-                  <div class="right box">
-                    <div class="topic">Subscribe to get new updates on deals</div>
-                    <form action="#">
-                      <input type="text" placeholder="Enter email address">
-                      <input type="submit" name="" value="Send">
-                    </form>
-                  </div>
-                </div>
-                <div class="bottom">
-                  <p>Copyright © 2021 <a href="#">Foodies</a> All rights reserved</p>
-                </div>
-              </footer>
-  
+      <div class="column">
+        <img
+          src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=902&q=80"
+          alt="Burger King">
+      </div>
+      <div class="column">
+        <img
+          src="https://images.unsplash.com/photo-1585032226651-759b368d7246?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=897&q=80"
+          alt="China Town">
+      </div>
+      <div class="column">
+        <img
+          src="https://images.unsplash.com/photo-1625944525803-d510d5a4a262?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=756&q=80"
+          alt="Friends Point">
+      </div>
+    </div>
+
+
+    <div class="cafe-section2">
+
+      <p id="cafe-tag2">Your favourite foods</p>
+
+    </div>
+
+    <div class="cafe-row2">
+      <div class="column">
+
+        <img
+          src="https://images.unsplash.com/photo-1615719413546-198b25453f85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=676&q=80"
+          alt="Dominos">
+      </div>
+      <div class="column">
+        <img
+          src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=902&q=80"
+          alt="Burger King">
+      </div>
+      <div class="column">
+        <img
+          src="https://images.unsplash.com/photo-1585032226651-759b368d7246?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=897&q=80"
+          alt="China Town">
+      </div>
+      <div class="column">
+        <img
+          src="https://images.unsplash.com/photo-1625944525803-d510d5a4a262?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=756&q=80"
+          alt="Friends Point">
+      </div>
+    </div>
+    <div class="lastbox">
+      <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p>Foodies provides assistance in delivering food at best discounts.</p>
             </div>
-          </Body>
-  </Html>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+              </div>
+              <div class="email">
+                <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">Our Services</div>
+            <div><a href="#">Fast Delivery</a></div>
+            <div><a href="#">Enriching Food</a></div>
+            <div><a href="#">Covid-19 Protocols</a></div>
+            <div><a href="#">Premium Membership</a></div>
+            <div><a href="#">Dedicated Crew </a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">Subscribe to get new updates on deals</div>
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+            </form>
+          </div>
+        </div>
+        <div class="bottom">
+          <p>Copyright © 2021 <a href="#">Foodies</a> All rights reserved</p>
+        </div>
+      </footer>
+
+    </div>
+</Body>
+
+</Html>
